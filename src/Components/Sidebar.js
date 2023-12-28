@@ -33,7 +33,7 @@ const Sidebarin = () => {
             </NavLink>
            </li> 
          <li className='ml-5 mb-2'>
-            <NavLink to="/traffic"  className={({ isActive }) =>
+            <NavLink to="/errors"  className={({ isActive }) =>
                isActive ? 'rounded-l-full bg-white text-sm flex h-11 p-3 w-full hover:text-black' : 'text-gray-400 flex p-3 text-sm font-thin'
                 }>
                      {/* <img src={Icon2} className="h-6 mr-3 contrast-0 sm:h-7"/> */}
@@ -42,24 +42,16 @@ const Sidebarin = () => {
             
          </li>
          <li className='ml-5 mb-2'>
-            <NavLink to="likedideas"  className={({ isActive }) =>
+            <NavLink to="updates"  className={({ isActive }) =>
                isActive ? 'rounded-l-full bg-white text-sm flex h-11 p-3 w-full hover:text-black' : 'text-gray-400 flex p-3 text-sm font-thin'
                 }>
                      {/* <img src={Icon2} className="h-6 mr-3 contrast-0 sm:h-7"/> */}
-               <span className="flex-1 ml-3 whitespace-nowrap">Admin Updates</span>
+               <span className="flex-1 ml-3 whitespace-nowrap">Updates</span>
             </NavLink>  
             
          </li>
 
-         <li className='ml-5 mb-2'>
-             <NavLink to="chat"  className={({ isActive }) =>
-                isActive ? 'rounded-l-full bg-white text-sm flex h-11 p-3 w-full hover:text-black' : 'text-gray-400 flex p-3 text-sm font-thin'
-                }>
-                {/* <img src={Icon5} className="h-6 mr-3 contrast-0  sm:h-7"/> */}
-               <span className="flex-1 ml-3 whitespace-nowrap">Chat</span>
-
-               </NavLink>
-         </li>
+       
         
         
          <li className='ml-5 mb-2'>
