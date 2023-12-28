@@ -25,19 +25,19 @@ const Sidebarin = () => {
       <ul className=" flex-grow  font-medium w-full">
 
            <li className=' ml-5  mb-2 '>
-            <NavLink to="traffic"  className={({ isActive }) =>             
+            <NavLink to="/"  className={({ isActive }) =>             
               isActive ? 'rounded-l-full bg-white text-sm flex h-11 p-3 w-full hover:text-black' : ' text-gray-400 flex p-3 text-sm font-thin'
                }>
                {/* <img src={Icon1} className="h-4  mr-3 contrast-0 sm:h-7"/> */}
-               <span className="ml-3">Profile</span>
+               <span className="ml-3">Traffic</span>
             </NavLink>
            </li> 
          <li className='ml-5 mb-2'>
-            <NavLink to="ideafeed"  className={({ isActive }) =>
+            <NavLink to="/traffic"  className={({ isActive }) =>
                isActive ? 'rounded-l-full bg-white text-sm flex h-11 p-3 w-full hover:text-black' : 'text-gray-400 flex p-3 text-sm font-thin'
                 }>
                      {/* <img src={Icon2} className="h-6 mr-3 contrast-0 sm:h-7"/> */}
-               <span className="flex-1 ml-3 whitespace-nowrap">Idea feed</span>
+               <span className="flex-1 ml-3 whitespace-nowrap">Error data  </span>
             </NavLink>  
             
          </li>
@@ -46,7 +46,7 @@ const Sidebarin = () => {
                isActive ? 'rounded-l-full bg-white text-sm flex h-11 p-3 w-full hover:text-black' : 'text-gray-400 flex p-3 text-sm font-thin'
                 }>
                      {/* <img src={Icon2} className="h-6 mr-3 contrast-0 sm:h-7"/> */}
-               <span className="flex-1 ml-3 whitespace-nowrap">Liked ideas</span>
+               <span className="flex-1 ml-3 whitespace-nowrap">Admin Updates</span>
             </NavLink>  
             
          </li>
