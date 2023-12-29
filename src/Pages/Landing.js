@@ -8,7 +8,7 @@ class TrafficChart extends Component {
     labels: ["Jan", "Feb", "March", "June", "July", "Aug"],
     datasets: [{
       label: '# of Votes',
-      data: [10, 19, 3, 5, 2, 3],
+      data: [10, 19, 3, 5, 2, 18],
       backgroundColor: [
         'rgba(255, 99, 132, 0.2)',
         'rgba(54, 162, 235, 0.2)',
@@ -62,20 +62,20 @@ class TrafficChart extends Component {
     const trendDetails = this.calculateTrend();
 
     return (
-      <div className="row">
-        <div className="col-md-6 ml-64 grid-margin stretch-card">
-          <div className="card">
+      <div className="row ">
+        <div className="  p-4   col-md-6 ml-64 grid-margin stretch-card">
+          <div className="bg-amber-100 shadow-md p-10 rounded-xl card">
             <div className="card-body">
-              <h4 className="card-title">Traffic Chart</h4>
+              <h4 className="card-title font-serif text-4xl">Traffic Chart</h4>
               <Line data={this.data} options={this.options} />
             </div>
           </div>
         </div>
-        <div className="col-md-6 grid-margin stretch-card">
-          <div className="card">
+        <div className="  p-4   col-md-6 w-1/2 ml-64 grid-margin stretch-card">
+          <div className="bg-blue-300 shadow-md p-10 rounded-xl card">
             <div className="card-body">
-              <h4 className="card-title">Traffic Trend</h4>
-              <p>{`Trend: ${trendDetails.trend}, Change: ${trendDetails.percentChange}%`}</p>
+              <h4 className="card-title font-serif text-4xl p-4">Traffic Trend</h4>
+              <p className='p-4 text-white text-2xl font-bold'>{`Trend: ${trendDetails.trend}, Change: ${trendDetails.percentChange}%`}</p>
             </div>
           </div>
         </div>
